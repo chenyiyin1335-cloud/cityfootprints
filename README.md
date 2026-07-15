@@ -115,3 +115,4 @@ npm run dev
 - **`pymysql` 报连接错误 / 认证插件问题**：确认 MySQL 用户使用 `mysql_native_password` 或较新版本已默认支持 `caching_sha2_password`（`requirements.txt` 已包含 `cryptography` 依赖来支持该插件）。
 - **前端地图瓦片加载慢或空白**：`MapView.tsx` 默认使用 `tile.openstreetmap.org` 的公共瓦片服务，本地网络访问外网较慢时可自行替换为其他兼容的瓦片源（如高德/腾讯地图的 XYZ 瓦片地址）。
 - **打卡按钮一直置灰**：说明浏览器定位未授权或当前位置确实超出 50 米范围，可在 `.env` 中调大 `CHECKIN_MAX_DISTANCE_METERS` 方便本地测试。
+- 部署测试
