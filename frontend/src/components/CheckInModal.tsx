@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { api } from "../api/client"
 import { api, ApiError, resolveAssetUrl, Shop } from "../api/client";
 
 interface Props {
